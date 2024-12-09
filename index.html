@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Faucet Claim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ethereum Faucet Claim</h1>
+        <p>Hubungkan wallet Ethereum Anda atau masukkan address secara manual untuk klaim faucet.</p>
+        
+        <button id="connect-wallet">Hubungkan Wallet</button>
+        <div id="wallet-info" class="hidden">
+            Wallet Terhubung: <span id="wallet-address"></span>
+        </div>
+        
+        <form id="faucet-form">
+            <input type="text" id="address" placeholder="Masukkan Ethereum address Anda" required />
+            <button type="submit">Claim</button>
+        </form>
+
+        <div id="response" class="hidden"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
